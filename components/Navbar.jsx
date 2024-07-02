@@ -26,26 +26,24 @@ const Navbar = () => {
             className={`navbar fixed-top ${navbarBg === 'gray' ? 'bg-gray' : ''}`}
             aria-label="Menu de navigation"
         >
-            <div className="container">
-                <a className="navbar-brand" href="/">
-                    <img 
-                        className="d-xs-block d-sm-block d-md-none d-lg-none" 
-                        src="/assets/logo-brekor-small.svg" 
-                        alt="Petit logo Brekor"
-                    />
-                    <img 
-                        className="d-none d-xs-none d-sm-none d-md-block d-lg-block" 
-                        src="/assets/logo-brekor.svg" 
-                        alt="Logo Brekor"
-                    />
-                </a>
-                <a 
-                    className="nav-link btn-gradient" 
-                    target="_blank" 
-                    href="https://brekor.fr/"
-                    aria-label="Découvrir le site Brekor"
-                >Découvrir Brekor</a>
-            </div>
+            <a className="navbar-brand" href="/">
+                <img 
+                    className="d-xs-block d-sm-block d-md-none d-lg-none" 
+                    src="/assets/logo-brekor-small.svg" 
+                    alt="Petit logo Brekor"
+                />
+                <img 
+                    className="d-none d-xs-none d-sm-none d-md-block d-lg-block" 
+                    src="/assets/logo-brekor.svg" 
+                    alt="Logo Brekor"
+                />
+            </a>
+            <a 
+                className="nav-link btn-gradient" 
+                target="_blank" 
+                href="https://brekor.fr/"
+                aria-label="Découvrir le site Brekor"
+            >Découvrir Brekor</a>
         </nav>
     );
 }

@@ -33,7 +33,7 @@ const Blog = async () => {
       <meta name="keywords" content="blog, articles" />
 
       <section className="gradient-border">
-        <h1>Blog</h1>
+        <h1 className="d-none">Blog</h1>
         <ul className='row d-flex justify-content-center gap-4'>
           {posts.map((post) => (
             <li key={post.slug} className="col-4 blog-card p-0">
