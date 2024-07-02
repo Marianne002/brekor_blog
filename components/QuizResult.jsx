@@ -1,5 +1,6 @@
 // components/QuizResult.jsx
 "use client";
+import "@styles/QuizCard.scss";
 import React from 'react';
 
 const QuizResult = ({ answers }) => {
@@ -46,9 +47,11 @@ const QuizResult = ({ answers }) => {
   };
 
   return (
-    <div className='pt-4 mt-4'>
-      <h2>Résultats du Quiz</h2>
-      <p>{getResultText()}</p>
+    <div className="gradient-border-all quiz-card mb-4">
+      <div className="card-body">
+        <h2>Résultat du Quiz</h2>
+        <span>{getResultText()}</span>
+      </div>
     </div>
   );
 };
