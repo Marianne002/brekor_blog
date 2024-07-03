@@ -34,10 +34,10 @@ const Blog = async () => {
 
       <section className="gradient-border">
         <h1 className="d-none">Blog</h1>
-        <ul className='row d-flex justify-content-center gap-4'>
+        <ul className="row d-flex justify-content-center gap-4 p-0">
           {posts.map((post) => (
             <li key={post.slug} className="col-4 blog-card p-0">
-              <a href={`/${post.slug}`} className='d-flex flex-column justify-content-around'>
+              <a href={`/${post.slug}`} className="d-flex flex-column justify-content-around">
                 <img src={post.blogImage} alt="Image de l'article" className="img-fluid mx-auto" />
                 <p><strong>{post.title}</strong></p>
               </a>
